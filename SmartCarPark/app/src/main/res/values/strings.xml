@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SmartCarPark</string>
+
+    <array name="genres">
+        <item>one hour</item>
+        <item>Two hour</item>
+        <item>Four hour</item>
+        <item>Eight hour</item>
+    </array>
+</resources>

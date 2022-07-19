@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SlotActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/white"
+        app:title="Parking Slots"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+
+    <TextView
+
+        android:layout_below="@id/toolbar"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Parking Slots Information"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
+
+
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--app:cardCornerRadius="20dp"-->
+        <!--app:cardBackgroundColor="@color/white"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_below="@id/title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+
+        <LinearLayout
+            android:layout_below="@id/title"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slot 1"
+                    android:textSize="28dp"
+                    android:textColor="@color/colorPrimary"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:src="@drawable/car"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp" />
+
+                <ToggleButton
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/toggleButton1"
+
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Off" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slot 2"
+                    android:textSize="28dp"
+                    android:textColor="@color/colorPrimary"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:src="@drawable/car"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp" />
+
+                <ToggleButton
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/toggleButton2"
+                    android:layout_margin="10dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Off" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slot 3"
+                    android:textSize="28dp"
+                    android:textColor="@color/colorPrimary"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:src="@drawable/car"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp" />
+
+                <ToggleButton
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/toggleButton3"
+                    android:layout_margin="10dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Off" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slot 4"
+                    android:textSize="28dp"
+                    android:textColor="@color/colorPrimary"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:src="@drawable/car"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp" />
+
+                <ToggleButton
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/toggleButton4"
+                    android:layout_margin="10dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Off" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <!--</android.support.v7.widget.CardView>-->
+
+
+
+
+
+    <!--<TextView-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Slot1"-->
+        <!--android:textSize="30dp"-->
+        <!--android:layout_marginTop="80dp"-->
+        <!--android:textColor="@color/colorPrimary"-->
+        <!--/>-->
+
+
+
+    <!--<ToggleButton-->
+        <!--android:textColor="@color/colorPrimary"-->
+        <!--android:id="@+id/toggleButton2"-->
+        <!--android:layout_marginTop="140dp"-->
+        <!--android:layout_marginLeft="300dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="ToggleButton" />-->
+
+
+
+
+    <!--<ToggleButton-->
+        <!--android:textColor="@color/colorPrimary"-->
+        <!--android:id="@+id/toggleButton3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_marginTop="200dp"-->
+        <!--android:layout_marginLeft="300dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="ToggleButton" />-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginRight="20dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Slot3"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="30dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="@color/colorPrimary"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="200dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+    <!--<ToggleButton-->
+        <!--android:id="@+id/toggleButton4"-->
+        <!--android:layout_marginTop="260dp"-->
+        <!--android:layout_marginLeft="300dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:textColor="@color/colorPrimary"-->
+        <!--android:text="ToggleButton" />-->
+
+    <!--<TextView-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Slot4"-->
+        <!--android:textSize="30dp"-->
+        <!--android:layout_marginTop="260dp"-->
+        <!--android:textColor="@color/colorPrimary"-->
+        <!--/>-->
+
+
+
+
+
+</RelativeLayout>
